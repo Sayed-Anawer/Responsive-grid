@@ -15,7 +15,15 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
       }
+      h1{
+        text-align: center;
+      }
+      h1::before{
+            content: "Desktop";
+        }
       .text-l::before {
         content: "Left";
       }
@@ -23,7 +31,6 @@
         content: "Right";
       }
       .container-grid {
-        font-family: "Poppins", sans-serif;
         display: grid;
         margin: 0 auto;
         width: 80%;
@@ -62,10 +69,14 @@
         .text-r::before {
           content: "Bottom";
         }
+        h1::before{
+            content: "Mobile";
+        }
       }
     </style>
   </head>
   <body>
+    <h1></h1>
     <div class="container-grid">
       <div class="box left"><span class="text-l"></span></div>
       <div class="box right"><span class="text-r"></span></div>
